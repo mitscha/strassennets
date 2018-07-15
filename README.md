@@ -26,7 +26,3 @@ python3 train.py --quant_mode 5 --max_epochs 40 --decay_when 0.5 --learning_rate
 python3 train.py --quant_mode 2 --max_epochs 20 --decay_when 0.5 --nbr_mul 1.0 --out_nbr_mul 2000 --learning_rate 0.2 --epochs_pre 20 --learning_rate_pre 2
 ```
 to train a Strassen language model. To change the multiplication budget, adapt `--nbr_mul` (budget of all but the last layer, relative to the number of hidden units) and `--out_nbr_mul` (budget of the last layer). The log files and trained models are stored in the folder `langmod/logs/`. To train with a full precision teacher model, use the option `--teacher_model <path to teacher model>`.
-
-### Note
-
-The poster contains (outdated) results from an earlier version of the paper.
